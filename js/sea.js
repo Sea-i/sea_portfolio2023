@@ -1,4 +1,5 @@
 $(document).on("pagecreate", "#layout" , function(){
+    console.log("%c@kimseoha", "font-size:20px; color:white; background:#6667aa; font-family:'Shrikhand'; padding:5px 10px;")
     //한 섹션 씩 스크롤 되게 하기 
     const scStop = $("#layout .move");
     const mobileWidth = $(document).width();
@@ -142,7 +143,6 @@ $(document).on("pagecreate", "#layout" , function(){
     const eventTop = $("#event").offset().top;
     const contactTop = $("#contact").offset().top;
     let scrollTop = 0;
-    console.log(aboutTop);
 
     if( winWidth > 1920){
         // alret("이 웹페이지는  1920px 이상에서는 원활하지 않으니 브라우저의 사이즈를 줄여주세요");
