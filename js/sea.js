@@ -193,12 +193,12 @@ $(document).on("pagecreate", "#layout" , function(){
             clearInterval( slide );
         }, 
         function(){
-            slide = setInterval( webSlide , 3800);
+            slide = setInterval( webSlide , 2800);
         }
         );
 
 
-    // 상세페이지 이미지 클릭 시, 큰 화면
+    // 상세페이지 이미지에 마우스를 올리면, 큰 화면
     $("#small button").on("mouseenter focus", function(){
         const smallSrc = $(this).children().attr("src");
         const smallAlt = $(this).children().attr("alt");
@@ -210,4 +210,46 @@ $(document).on("pagecreate", "#layout" , function(){
         const bigAlt = $("#dt-info").prev().prev().children().children().attr("alt")
         console.log( bigSrc + "\n" + bigAlt );
     });
+
+    // 이벤트페이지, 웹이벤트 슬라이드 위 > 아래
+    let eSlide = setInterval ( evtSlide , 2800 );
+    
+    function evtSlide(){
+        $("#et-web-slide").stop().animate( { top : "-250px"} , 2500, function(){
+            $("#et-web-slide").prepend( $("#et-web-slide").children().last() );
+            $("#et-web-slide").css( "top" , "-700px" );
+        });
+        // console.log("move?");
+    }
+
+    $("#et-web-slide >div").hover(
+        function(){
+            clearInterval( eSlide );
+            $(this).children(".et-info").fadeIn().css("display" , "flex");
+        }, 
+        function(){
+            eSlide = setInterval ( evtSlide , 2800 );
+            $(".et-info").fadeOut();
+        });
+
+    // sns event slide 아래에서 위로
+    let sSlide = setInterval ( snsSlide , 2800 );
+    
+    function snsSlide(){
+        $("#et-sns-slide").stop().animate( { top : "-700px"} , 2500, function(){
+            $("#et-sns-slide").append( $("#et-sns-slide").children().first() );
+            $("#et-sns-slide").css( "top" , "-250px" );
+        });
+        // console.log("move?");
+    }
+
+    $("#et-sns-slide >div").hover(
+        function(){
+            clearInterval( sSlide );
+            $(this).children(".et-info").fadeIn().css("display" , "flex");
+        }, 
+        function(){
+            sSlide = setInterval ( snsSlide , 2800 );
+            $(".et-info").fadeOut();
+        });
 });//All END

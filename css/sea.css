@@ -453,6 +453,110 @@ span.material-symbols-outlined {
     background-attachment: fixed;
     height : 100vh;
 }
+#event h2 {
+    padding : 30pt 0;
+    width : 100%;
+    text-align: center;
+    font-size : 3.5rem;
+    font-family: 'Cafe24Ohsquare';
+}
+#event-design {
+    width : 100%;
+    height : 80%;
+    padding : 10pt 150pt;
+    display : flex;
+    justify-content: space-between;
+}
+#et-web {
+    display : flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background: rgba(255,255,255,0.45);
+    border-bottom-right-radius: 100pt;
+    padding : 0 20pt;
+    width : 750px; height : 900px;
+}
+#et-web h4 {
+    height : 53pt;
+    font-size : 1.7rem;
+    margin-top : 30pt;
+    margin-right : -40pt;
+    padding-right : 10pt;
+    border-right : 3pt solid #282832;
+    text-align: right;
+    letter-spacing: 1.5pt;
+    line-height: 140%;
+}
+#et-web  .et-slide-bg {
+    height : 900px;
+    overflow : hidden;
+}
+#et-web-slider {
+    height : 2500px;
+}
+#et-web-slide {
+    width : 400px; height : 400px;
+    position : relative;
+    top : -700px;
+}
+#et-web-slide  .et-slide-img {    
+    margin-top : 50px;
+    position : relative;
+}
+.et-info {
+    position: absolute;
+    top : 0; left : 0;
+    width : 400px; height : 400px;
+    background: rgba(0,0,0,0.5);
+    box-sizing: content-box;
+    font-size : 1.5rem;
+    font-weight: bold;
+    color : white;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+.et-info span.material-symbols-outlined {
+    color : white !important;
+    margin-right : 5pt;
+    font-size : 2.6rem;
+}
+#et-sns {
+    display : flex;
+    justify-content: space-evenly;   
+    background: rgba(255,255,255,0.45);
+    border-top-left-radius: 100pt;
+    padding : 0 20pt;
+    width : 750px; height : 900px;
+}
+#et-sns h4 {
+    height : 53pt;
+    font-size : 1.7rem;
+    margin-top : 800px;
+    margin-left : -40pt;
+    padding-left : 10pt;
+    border-left : 3pt solid #282832;
+    letter-spacing: 1.5pt;
+    line-height: 140%;
+}
+#et-sns  .et-slide-bg {
+    height : 900px;
+    overflow : hidden;
+}
+#et-sns-slider {
+    height : 2500px;
+}
+#et-sns-slide {
+    width : 400px; height : 400px;
+    position : relative;
+    top : -250px;
+}
+#et-sns-slide  .et-slide-img {
+    margin-top : 50px;
+    position : relative;
+}
 /* layout > contact */
 #contact {
     background-image: url(../img/bg-contact.jpg);
@@ -461,7 +565,6 @@ span.material-symbols-outlined {
     background-size : cover;
     background-attachment: fixed;
     height : 100vh;
-    display : none;
 }
 /* layout > big-img */
 #big-img {
