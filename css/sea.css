@@ -412,6 +412,12 @@ span.material-symbols-outlined {
 #dt button {
     cursor: pointer;
 }
+#big {
+    /* border:  3px solid tomato; */
+    box-sizing: content-box;
+    width :  800px;
+    height : 800px;
+}
 #big button {
     display: block;
     width :  800px;
@@ -424,24 +430,35 @@ span.material-symbols-outlined {
     display : block;
     width : 200px;
 }
-#dt-info {
+/* #dt-info {
     position: absolute;
     bottom : 20pt; right : 510pt;
     display: flex;
-    font-size: 1.4rem;
+    
     background: rgba(0,0,0,0.45);
     padding : 8pt 12pt 5pt;
     border-radius: 50pt;
     color : white;
+} */
+#dt-info {
+    position : absolute;
+    top : 0; left : 460px;
+    width : 800px;
+    height : 800px;
+    background: rgba(0,0,0,0.45);
+    display : none;
 }
 #dt-info span.material-symbols-outlined {
     margin-right : 5pt;
     color : white !important;
-    font-size : 2rem;
+    font-size : 2.2rem;
     transform: translateY(-3pt);
 }
 #dt-info p {
     font-family: 'Cafe24Ohsquareair';
+    color : white;
+    font-size: 1.35rem;
+    margin-top : 5pt;
 }
 
 /* layout > event */
@@ -615,7 +632,31 @@ span.material-symbols-outlined {
     color : white;
     font-style : italic;
 }
-/* layout > big-img */
-#big-img {
+/* layout > big-content */
+#big-content {
+    position : absolute;
+    top : 0; 
+    left : 0;
+    width : 1920px;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     display : none;
+}
+#big-content h4 {
+    color : white;
+    font-size : 2rem;
+    margin : 25pt 0;
+}
+#big-content-btn.material-symbols-outlined {
+    color : white;
+    background: none;
+    font-size : 6rem;
+    width : 100px;
+    height : 100px;
+    position : absolute;
+    top : 50px;
+    right : 50px;
 }

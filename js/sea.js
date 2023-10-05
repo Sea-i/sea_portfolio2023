@@ -4,8 +4,8 @@ $(document).on("pagecreate", "#layout" , function(){
     const scStop = $("#layout .move");
     const mobileWidth = $(document).width();
     
-    $(scStop).each(function(){
-        if( mobileWidth >= 0 ){ 
+  $(scStop).each(function(){
+        if( $("#popup").css("display","none") ){ 
             $(this).on("mousewheel DOMMouseScroll", function(e){
                 e.preventDefault();
                 let delta = 0;
@@ -35,6 +35,9 @@ $(document).on("pagecreate", "#layout" , function(){
                     });
             });// end this.on 
         }// if
+        else {
+           
+        }
     });//end each() */
 
     // 첫화면 글씨 타이핑효과
@@ -133,6 +136,18 @@ $(document).on("pagecreate", "#layout" , function(){
         $("#side").removeClass("hov");
         $("#side-menu").stop().fadeOut();
     });
+    
+    $("#side h3 a").click(function(){
+        if( $("#side-btn").text() == "menu" ){
+            $("#side-menu").stop().fadeOut();
+            $("#side").removeClass("hov");
+        }
+        else{            
+            $("#side-btn").text("menu");
+            $("#side-menu").stop().fadeOut();
+            $("#side").removeClass("hov");
+        }
+    });
 
     const winWidth = $(window).width();
     const winHeight = $(window).height();
@@ -153,7 +168,8 @@ $(document).on("pagecreate", "#layout" , function(){
             $("#side").hide();
         }
         if ( scrollTop >= aboutTop ){
-            $("#side").show().css("display","flex");
+            $("#side").show();
+            $("#side").css("display","flex");
             $("#photo progress").delay(200).animate({ value : 93 });
             $("#ai progress").delay(300).animate( {value : 83 });
             $("#proto progress").delay(300).animate({ value : 78 });
@@ -199,16 +215,34 @@ $(document).on("pagecreate", "#layout" , function(){
 
 
     // 상세페이지 이미지에 마우스를 올리면, 큰 화면
+    $("#big").on("mouseenter focus",function(){
+        $("#dt-info").fadeIn();
+    });
+    $("#dt-info").mouseleave(function(){
+        $("#dt-info").fadeOut();
+});
     $("#small button").on("mouseenter focus", function(){
         const smallSrc = $(this).children().attr("src");
         const smallAlt = $(this).children().attr("alt");
         $("#big img").attr({ src : smallSrc , alt : smallAlt });
     });
 
+    // 큰 화면에서 자세히 보기를 누르면 원본 사진이 뜬다
     $("#dt-info").click(function(){
-        const bigSrc = $("#dt-info").prev().prev().children().children().attr("src")
-        const bigAlt = $("#dt-info").prev().prev().children().children().attr("alt")
-        console.log( bigSrc + "\n" + bigAlt );
+        const dtBigImgSrc = $(this).prev().prev().children().children().attr("src");
+        const dtBigImgSrcChan = dtBigImgSrc.replace( ".jpg" , "-big.jpg" );
+        const dtBigImgAlt = $(this).prev().prev().children().children().attr("alt");
+
+        $("#big-content").fadeIn();
+        $("#big-content").css("display" , "flex" );
+        $("#big-content h4").text( dtBigImgAlt );
+        $("#big-content img").attr({ "src" : dtBigImgSrcChan, "alt" : dtBigImgAlt });
+        // $("body").css("overflow-y" , "hidden" );
+    });
+
+    $("#big-content-btn").click(function(){
+        $("#big-content").fadeOut();
+        // $("body").css("overflow-y" , "auto" );
     });
 
     // 이벤트페이지, 웹이벤트 슬라이드 위 > 아래
@@ -252,4 +286,5 @@ $(document).on("pagecreate", "#layout" , function(){
             sSlide = setInterval ( snsSlide , 2800 );
             $(".et-info").fadeOut();
         });
+
 });//All END
