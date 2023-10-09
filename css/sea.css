@@ -169,7 +169,7 @@ span.material-symbols-outlined {
     align-items: center;
     padding-top : 15pt;
     cursor : default;
-    /* display : none; */
+    display : none;
 }
 #side:hover, #side.hov {
     background: rgba(255,255,255,0.8);
