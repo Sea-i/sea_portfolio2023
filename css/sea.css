@@ -36,10 +36,6 @@ html {
     border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb:hover { background: #4f4d8e;}
-
-body {
-    /* overflow-x : hidden; */
-}
 ::selection {
     color : white;
     background : #4f4d8e;
@@ -332,9 +328,11 @@ span.material-symbols-outlined {
 }
 #web .bg-white {
     background: rgba(255,255,255,0.3);
-    /* margin : 0 auto; */
     width : 1400px;
-    height : 700px;
+    height : 85vh;
+    display : flex;
+    align-items: center;
+    justify-content: center;
 }
 #web img {
     width : 800px ;
@@ -587,7 +585,7 @@ span.material-symbols-outlined {
     width : 98%;
     height : 100vh;
     padding : 18pt 15pt;
-    margin : 20pt auto 0;
+    margin : 0 auto;
     cursor : default; 
 }
 #contact .bg-white {
