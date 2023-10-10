@@ -287,8 +287,9 @@ $(document).on("pagecreate","#layout" , function(){
             $("#big-content").css("overflow-y" , "auto" );
     
             const dtH2height = $("#detail h2").position().top;
-            $("#big-content").css("top" , dtH2height );
-            $("#big-content img").css("top" , dtH2height + $("#big-info").height() );
+            const winT = $(window).position().top;
+            $("#big-content").css("top" , winT );
+            $("#big-content img").css("top" , winT + $("#big-info").height() );
         });
     } 
 
