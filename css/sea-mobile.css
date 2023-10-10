@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+@media(max-width:474px){
+    #container {
+        width : 360px;
+    }
+    #menu ul li > a{
+        padding : 10pt;
+        font-size : 1rem;
+    }
+    #sub-menu {
+        top : 45px;
+    }
+    #sub-menu a {
+        font-size : 0.7rem;
+        padding : 10pt;
+    }
+    /* --- */
+    #title {
+        text-shadow: 3pt 3pt 0 #4f4d8e;
+    }
+    #title h1 {
+        font-size : 3.5rem;
+    }
+    #title span {
+        font-size : 2rem;
+        transform: translateY(-20pt);
+        padding-left : 6%;
+    }
+    /* --- */
+    #side {
+        height  : 30pt;
+    }
+    #side h3 {
+        font-size : 1.3rem;
+    }
+    #side span#side-btn.material-symbols-outlined {
+        font-size : 2rem;
+    }
+    #side-menu {
+        top : 30pt;
+        height : 220pt;
+        padding : 10pt 0 0 40pt;
+    }
+    #side-menu a {
+        font-size : 1rem;
+        padding : 7pt 0;
+    }
+    /* ------------------ */
+    #about {
+        height : 120%;
+        padding : 40pt 5pt 25pt;
+    }
+    #abT {
+        margin-bottom : 20pt;
+    }
+    #abT img {
+        width : 50%;
+    }
+    #abT p {
+        font-size : 1rem;
+    }
+    #abT p mark {
+        background: #6667aa;
+    }
+    #abM {
+        width : 350px;
+        height : 180px;
+    }
+    #abM > section {
+        width : 350px;
+        height : 180px;
+    }
+    #abM > section h2 {
+        font-size : 1.3rem;
+    }
+    #abM > section li {
+        font-size : 0.95rem;
+    }
+    #profile h2 {
+        width : 90px;
+        height : 25px;
+        margin-left : 10px;
+        position : relative;
+        z-index : 10;
+    }
+    #edu h2 {
+        width : 130px;
+        height : 25px;
+        left : 110px;
+        z-index: 5;
+    }
+    #license h2 {
+        width : 90px;
+        height : 25px;
+        left : 250px;
+    }
+    #edu ul , #license ul {
+        top : 40px;
+        width : 350px;
+        height : 120px;
+    }
+    #abF {
+        width : 350px;
+        height : 200px;
+        margin-top : -30px;
+        margin-bottom : 10px;
+    }
+    #abF > section h2 {
+        font-size : 1.3rem;
+        margin-left : 10px;
+    }
+    #abF form {
+        width : 350px;
+    }
+    #abF form > div {
+        width : 70px;
+        height : 90px;
+        margin : 0;
+        margin-right : 10px;
+        margin-top : 5px;
+    }
+    #abF form div p {
+        width : 70px;
+        font-size : 0.9rem;
+    }
+    #abF ::-webkit-progress-bar {
+        height : 70px;
+        border-radius: 15px;
+    }
+    #abF form div progress {
+        width : 70px;
+    }
+    #container > section {
+        margin-top : 10pt;
+    }
+    #container > section > h2 {
+        font-family: 'TAEBAEKfont';
+        font-weight: normal;
+        font-size : 2rem;
+        background: none;
+        margin-bottom : 10pt;
+    }
+    #web {
+        padding : 40pt 15pt 25pt;
+    }    
+    #web .bg-white  {
+        width : 350px;
+        height : 530px;
+    }
+    #slide {
+        width : 350px;
+        height : 530px;
+    }
+    #slideArea {
+        width : 1050px;
+        height : 530px;
+        left : -350px;
+    }
+    #slideArea > div {
+        width : 350px;
+        height : 530px;
+        justify-content: start;
+    }
+    #slideArea img {
+        width : 300px;
+        height : 225px;
+        margin : 25px;
+    }
+    .wb-info {
+        width : 350px;
+        padding : 0 20px; 
+    }
+    .wb-info h3 {
+        padding : 0;
+        font-size : 1.4rem;
+    }
+    .wb-info hr {
+        width : 98%;
+        border-top : 1.5pt solid #282832;
+    }
+    .wb-info h3 span {
+        font-size : 1.1rem;
+        padding-left : 3pt;
+    }
+    .wb-info ul li {
+        font-size : 0.9rem;
+    }
+    .wb-sub-btn {
+        margin-top : 25pt;
+    }
+    .wb-sub-btn a {
+        padding : 10pt 0;
+        font-size : 1.05rem;
+        border-radius: 50pt;
+    }
+    /* --------- */
+    #detail {
+        padding : 40pt 15pt 25pt;
+    }
+    #big, #big button {
+        width : 320px;
+        height : 320px;
+    }
+    #small button {
+        width : 80px;
+    }
+    /* ---------- */
+    #event {
+        padding : 40pt 15pt 25pt;
+    }
+    #event-design {
+        width : 350px;
+        height : 530px;
+    }
+    #et-web {
+        width : 350px;
+        height : 250px;
+        border-radius : 0;
+    }
+    #et-web h4 {
+        height : 22px;
+        font-size : 1.2rem;
+    }
+    #et-web .et-slide-bg , #et-web-slider {
+        width : 350px;
+        height : 200px;
+    }
+    #et-web-slide {
+        width : 875px;
+        height : 200px;
+        left : -275px;
+    }
+    #et-web-slide  .et-slide-img {    
+        width : 150px;
+        height : 150px;
+        margin : 0;
+        margin-left : 25px;
+    }
+    #et-web-slide  .et-slide-img img {
+        width : 150px;
+        height : 150px;
+    }
+    /* --- */
+    #et-sns {
+        width : 350px;
+        height : 250px;
+        border-radius : 0;
+    }
+    #et-sns h4 {
+        height : 22px;
+        font-size : 1.2rem;
+    }
+    #et-sns .et-slide-bg , #et-web-slider {
+        width : 350px;
+        height : 200px;
+    }
+    #et-sns-slide {
+        width : 875px;
+        height : 200px;
+        left : -275px;
+    }
+    #et-sns-slide  .et-slide-img {    
+        width : 150px;
+        height : 150px;
+        margin : 0;
+        margin-left : 25px;
+    }
+    #et-sns-slide  .et-slide-img img {
+        width : 150px;
+        height : 150px;
+    }
+    /* --- */
+    .et-info {
+        width : 150px;
+        height : 150px;
+    }
+    /* -------------- */
+    #contact {
+        padding : 40pt 20pt 15pt;
+    }
+    #contact h2 {
+        font-size : 2rem;
+    }
+    #contact hr {
+        width : 90%;
+        border-top : 2.5pt solid #222;
+        margin : 20pt 0;
+    }
+    #contact ul {
+        width : 100%;
+        padding-left : 5pt;
+        margin : 0 auto;
+        text-align: center;
+    }
+    #contact ul li {
+        font-size : 1rem;
+        display : block;
+    }
+    #contact ul li b {
+        display : inline-block;
+        margin-bottom : 5px;
+        padding : 0;
+        padding : 5px 15px;
+        color : white;
+        border : 0;
+        background: #6667aa;
+    }
+    #contact ul li span {
+        display : block;
+    }
+} /* @media max 474px */

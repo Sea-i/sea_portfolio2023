@@ -12,6 +12,12 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: 'TAEBAEKfont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 /* font-family: 'Shrikhand'; ////google web font  link */
 div.ui-loader  h1, div.ui-loader span { display : none; }
 
@@ -62,17 +68,22 @@ span.material-symbols-outlined {
     color : #282832 !important;
 }
 /* ----------------- */
-#layout {
+body {
     background-image: url(../img/container-bg.jpg);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
+}
+#layout {
+    margin : 0 auto;
+    overflow: hidden;
 }
 /* layout > container */
 #container {
     width : 1536px;
     margin : 0 auto;
     position : relative;
+    
 }
 /* --- */
 #home {
@@ -504,7 +515,7 @@ span.material-symbols-outlined {
     margin-top : 15pt;
     margin-right : -5pt;
     padding-right : 5pt;
-    border-right : 3pt solid #282832;
+    border-right : 3pt solid #222;
     text-align: right;
     letter-spacing: 1.5pt;
     line-height: 140%;
@@ -560,7 +571,7 @@ span.material-symbols-outlined {
     margin-top : 670px;
     margin-left : -5pt;
     padding-left : 5pt;
-    border-left : 3pt solid #282832;
+    border-left : 3pt solid #222;
     letter-spacing: 1.5pt;
     line-height: 140%;
 }
@@ -607,7 +618,7 @@ span.material-symbols-outlined {
 }
 #contact hr {
     width : 350pt;
-    border-top : 5pt solid #282832;
+    border-top : 5pt solid #222;
     margin : 20pt 0 30pt;
 }
 #contact ul {
@@ -624,7 +635,7 @@ span.material-symbols-outlined {
 #contact ul li b {
     flex : 0.3;
     padding-left : 10pt;
-    border-left : 3.5pt solid #282832;
+    border-left : 3.5pt solid #222;
 }
 #contact ul li span {
     flex : 0.7;
