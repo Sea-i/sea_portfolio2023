@@ -378,7 +378,7 @@ body {
 }
 .wb-info hr {
     width : 100%;
-    border-top : 1.5pt solid #282832;
+    border-top : 1.5pt solid #222;
     margin : 15pt 0;
 }
 .wb-info h3 span {
@@ -670,14 +670,22 @@ body {
     height : 100px;
     background: #000;
     z-index: 15;
+    display : flex;
+    align-items: center;
+    justify-content: center;
 }
 #big-info  h4 {
+    flex : 0.95;
     color : white;
     font-size : 2rem;
     margin : 25pt 0;
     text-align: center;
+    display : flex;
+    align-items: center;
+    justify-content: center;
 }
 #big-content-btn.material-symbols-outlined {
+    flex : 0.05;
     color : white;
     background: none;
     font-size : 4rem;
@@ -685,5 +693,5 @@ body {
     height : 100px;
     position : absolute;
     top : 0;
-    right : 30pt;
+    right : 10pt;
 }

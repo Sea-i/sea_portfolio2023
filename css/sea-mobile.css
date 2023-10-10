@@ -169,6 +169,7 @@
     }
     .wb-info {
         width : 350px;
+        height : 200px;
         padding : 0 20px; 
     }
     .wb-info h3 {
@@ -177,7 +178,8 @@
     }
     .wb-info hr {
         width : 98%;
-        border-top : 1.5pt solid #282832;
+        border-top : 1.5pt solid #222;
+        margin : 10px 0;
     }
     .wb-info h3 span {
         font-size : 1.1rem;
@@ -187,11 +189,11 @@
         font-size : 0.9rem;
     }
     .wb-sub-btn {
-        margin-top : 25pt;
+        margin-top : 5px;
     }
     .wb-sub-btn a {
-        padding : 10pt 0;
-        font-size : 1.05rem;
+        padding : 5px 0;
+        font-size : 0.8rem;
         border-radius: 50pt;
     }
     /* --------- */
@@ -274,6 +276,12 @@
     .et-info {
         width : 150px;
         height : 150px;
+        font-size : 1rem;
+        flex-direction: column;
+    }
+    .et-info span.material-symbols-outlined {
+        font-size : 1.5rem;
+        margin-bottom : 5px;
     }
     /* -------------- */
     #contact {
@@ -308,5 +316,24 @@
     }
     #contact ul li span {
         display : block;
+    }
+    /* ----- */
+    #big-content img {
+        top : 60px;
+        /* border : 10px solid tomato; */
+    }
+    #big-info {
+        height : 60px;
+    }
+    #big-info h4{
+        /* border : 10px solid tomato; */
+        font-size : 1.3rem;
+        height : 60px;
+        margin : 0;
+    }
+    #big-content-btn.material-symbols-outlined {
+        font-size : 2rem;
+        width : 60px;
+        height : 60px;
     }
 } /* @media max 474px */
