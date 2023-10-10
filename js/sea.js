@@ -241,7 +241,7 @@ $(document).on("pagecreate", "#layout" , function(){
         $("#dt-info").mouseleave(function(){
             $("#dt-info").fadeOut();
         });
-    }
+    } //end if
         $("#small button").on("mouseenter focus", function(){
             const smallSrc = $(this).children().attr("src");
             const smallAlt = $(this).children().attr("alt");

@@ -285,7 +285,25 @@ $(document).on("pagecreate","#layout" , function(){
             $("#big-content img").attr({ "src" : dtBigImgSrcChan, "alt" : dtBigImgAlt });
             $("body").css("overflow-y" , "hidden" );
             $("#big-content").css("overflow-y" , "auto" );
-        });
-    } 
 
+            const sideTop = $("#side").offset().top;
+            $("#big-content").css("top" , sideTop );
+        });
+
+        $(".et-info").click(function(){
+            const etBigImgSrc = $(this).prev().attr("src");
+            const etBigImgSrcChan = etBigImgSrc.replace( ".jpg" , "-big.jpg" );
+            const etBigImgAlt = $(this).prev().attr("alt");
+    
+            $("#side").hide();
+            $("#big-content").fadeIn();
+            $("#big-content h4").text( etBigImgAlt );
+            $("#big-content img").attr({ "src" : etBigImgSrcChan, "alt" : etBigImgAlt });
+            $("body").css("overflow-y" , "hidden" );
+            $("#big-content").css("overflow-y" , "auto" );
+    
+            const sideTop = $("#side").offset().top;
+            $("#big-content").css("top" , sideTop );
+        });
+    }
 });//END ALL
