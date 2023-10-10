@@ -274,5 +274,22 @@ $(document).on("pagecreate","#layout" , function(){
             $("#dt-info").show();
         });
 
-    }
+        $("#dt-info").click(function(){
+            const dtBigImgSrc = $(this).prev().children().attr("src");
+            const dtBigImgSrcChan = dtBigImgSrc.replace( ".jpg" , "-big.jpg" );
+            const dtBigImgAlt = $(this).prev().children().attr("alt");
+        
+            $("#side").hide();
+            $("#big-content").fadeIn();
+            $("#big-content h4").text( dtBigImgAlt );
+            $("#big-content img").attr({ "src" : dtBigImgSrcChan, "alt" : dtBigImgAlt });
+            $("body").css("overflow-y" , "hidden" );
+            $("#big-content").css("overflow-y" , "auto" );
+    
+            const dtH2height = $("#detail h2").position().top;
+            $("#big-content").css("top" , dtH2height );
+            $("#big-content img").css("top" , dtH2height + $("#big-info").height() );
+        });
+    } 
+
 });//END ALL
