@@ -324,7 +324,7 @@ body {
 #web {
     width : 1400px;
     height : 100vh;
-    padding-top : 50pt;
+    padding-top : 30pt;
     display : flex;
     margin : 0 auto;
     flex-direction: column;
@@ -506,7 +506,7 @@ body {
     background: rgba(255,255,255,0.45);
     border-bottom-right-radius: 60pt;
     padding : 0 20pt;
-    width : 530px; height : 750px;
+    width : 550px; height : 750px;
     margin-right : 10pt;
 }
 #et-web h4 {
@@ -519,6 +519,9 @@ body {
     text-align: right;
     letter-spacing: 1.5pt;
     line-height: 140%;
+}
+#et-web h4 span {
+    display : block;
 }
 #et-web  .et-slide-bg {
     height : 750px;
@@ -534,6 +537,7 @@ body {
 }
 #et-web-slide  .et-slide-img {    
     margin-top : 25px;
+    width : 350px; height : 350px;
     position : relative;
 }
 .et-info {
@@ -562,7 +566,7 @@ body {
     background: rgba(255,255,255,0.45);
     border-top-left-radius: 100pt;
     padding : 0 20pt;
-    width : 530px; height : 750px;
+    width : 550px; height : 750px;
     margin-left : 10pt;
 }
 #et-sns h4 {
@@ -575,19 +579,25 @@ body {
     letter-spacing: 1.5pt;
     line-height: 140%;
 }
+#et-sns h4 span {
+    display : block;
+}
 #et-sns  .et-slide-bg {
+    width : 350px;
     height : 750px;
     overflow : hidden;
 }
 #et-sns-slider {
+    width : 350px;
     height : 1875px;
 }
 #et-sns-slide {
-    width : 350px; height : 350px;
+    width : 350px; height : 1875px;
     position : relative;
     top : -200px;
 }
 #et-sns-slide  .et-slide-img {
+    width : 350px; height : 350px;
     margin-top : 25px;
     position : relative;
 }

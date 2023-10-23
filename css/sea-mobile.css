@@ -320,6 +320,7 @@
     /* ----- */
     #big-content img {
         top : 60px;
+        position : absolute;
         /* border : 10px solid tomato; */
     }
     #big-info {
