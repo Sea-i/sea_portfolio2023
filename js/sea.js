@@ -177,10 +177,10 @@ $(document).on("pagecreate", "#layout" , function(){
 
     if ( winW > 1280 ){          
         // <web>이미지 슬라이드 우>좌
-        let slide = setInterval( webSlide , 2800 );
+        let slide = setInterval( webSlide , 4200 );
 
         function webSlide(){
-            $("#slideArea").stop().animate( { left : "-1400px"} , 2700, function(){
+            $("#slideArea").stop().animate( { left : "-1400px"} , 4000, function(){
                 $("#slideArea").append( $("#slideArea").children().first() );
                 $("#slideArea").css( "left" , "0" );
             });
@@ -293,10 +293,10 @@ $(document).on("pagecreate", "#layout" , function(){
     
     if( winW <= 1280 && winW > 820 ){
         // <web>이미지 슬라이드 우>좌
-        let slide = setInterval( webSlide , 2800 );
+        let slide = setInterval( webSlide , 4200 );
 
         function webSlide(){
-            $("#slideArea").stop().animate( { left : "-1000px"} , 2700, function(){
+            $("#slideArea").stop().animate( { left : "-1000px"} , 4000, function(){
                 $("#slideArea").append( $("#slideArea").children().first() );
                 $("#slideArea").css( "left" , "0" );
             });
@@ -305,7 +305,7 @@ $(document).on("pagecreate", "#layout" , function(){
             function(){
                 clearInterval ( slide );
             },function(){
-                slide = setInterval( webSlide , 2800 );
+                slide = setInterval( webSlide , 3100 );
             });
 
                 // 이벤트페이지, 웹이벤트 슬라이드 위 > 아래
