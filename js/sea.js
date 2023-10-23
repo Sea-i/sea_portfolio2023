@@ -1,8 +1,8 @@
 $(document).on("pagecreate", "#layout" , function(){
     console.log("%c@kimseoha", "font-size:20px; color:white; background:#6667aa; font-family: 'InkLipquid'; font-weight : bold; padding:5px 10px;")
     
-    //한 섹션 씩 스크롤 되게 하기 
     const  winW = $(window).width();
+    /*//한 섹션 씩 스크롤 되게 하기 
     const scStop = $("#container .move");
     
   $(scStop).each(function(){
@@ -234,7 +234,8 @@ $(document).on("pagecreate", "#layout" , function(){
     }
     // 상세페이지 이미지에 마우스를 올리면, 큰 화면
     
-    if(winW > 820 ){
+    if( winW > 820 ){
+        $("#dt-info").hide();
         $("#big").on("mouseenter focus",function(){
             $("#dt-info").fadeIn();
         });
@@ -284,6 +285,7 @@ $(document).on("pagecreate", "#layout" , function(){
 
     $("#big-content-btn").click(function(){
         $("#big-content").fadeOut();
+        $("#big-content").scrollTop(0);
         $("body").css("overflow-y" , "auto" );
         $("#side").show();
         $("#side").css("display","flex");
